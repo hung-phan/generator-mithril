@@ -11,7 +11,7 @@ var m = require('mithril');
 //routing configuration
 m.route(document.getElementById('ui-router'), '/', {
     //require app module
-    '/': require('./components/app.jsx');
+    '/': require('./components/app.jsx')
 });
 //setup routes to start w/ the `#` symbol
 m.route.mode = "hash";
