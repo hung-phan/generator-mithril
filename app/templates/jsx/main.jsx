@@ -8,6 +8,8 @@ window._ = lodash;<% } %>
 require('bootstrap');
 var m = require('mithril');
 
+//require app module
+var app = require('./components/app.jsx');
 <% } else { %>
 require([
     'jquery',
