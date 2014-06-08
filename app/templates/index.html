@@ -15,15 +15,15 @@
     <!--build script-->
     <!--do not remove the build script tag. This is automatically replace when the script is built-->
     <script src="scripts/config.js" type="text/javascript" charset="utf-8"></script>
-    <!--end build script-->
-    <script src="scripts/main.js" type="text/javascript" charset="utf-8"></script><% } else { %>
-    <script src="scripts/main.js" type="text/javascript" charset="utf-8"></script><% } %>
+    <!--end build script--><% } %>
+    <script src="scripts/main.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
     <!--[if lt IE 10]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <div id="ui-router"></div>
     <% if (cssFramework==='SASSBootstrap') {%>
     <div class="container">
         <div class="header">
@@ -56,8 +56,6 @@
                 <h4>Modernizr</h4>
                 <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
 
-                <h4>ReactJs</h4>
-                <p><div id="route"></div></p>
             </div>
             <div class="col-lg-6">
                 <h4>RequireJs</h4>

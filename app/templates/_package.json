@@ -18,6 +18,7 @@
     "envify": "*",<% } else { %>
     "grunt-bower-requirejs": "*",
     "grunt-contrib-requirejs": "*",<% } %>
+    "grunt-msx": "*",
     "grunt-contrib-htmlmin": "*",<% if (testFramework === 'jasmine') { %>
     "grunt-contrib-jasmine": "*",<% } %>
     "grunt-bower-install": "*",

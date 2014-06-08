@@ -6,6 +6,7 @@
     "font-awesome": "*",<% } %><% if (includeLodash) { %>
     "lodash": "*",<% } %><% if (includeModernizr) { %>
     "modernizr": "*",<% } %>
+    "mithril": "*",
     "jquery": "~2.1.1",<% if (includeButtonCss) { %>
     "Buttons": "*",<% } %><% if (includeAnimateCss) { %>
     "animate-sass": "*",<% } %><% if (moduleLoader === 'requirejs') { %>
