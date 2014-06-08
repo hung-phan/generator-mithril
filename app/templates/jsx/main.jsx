@@ -6,13 +6,15 @@ window.jQuery = $;<% if (includeLodash) { %>
 var lodash = require('lodash');
 window._ = lodash;<% } %>
 require('bootstrap');
+var m = require('mithril');
 
 <% } else { %>
 require([
-    'jquery',<% if (includeLodash) { %>
+    'jquery',
+    'mithril',<% if (includeLodash) { %>
     'lodash',<% } %><% if (cssFramework === 'SASSBootstrap') { %>
     'bootstrap'<% } %>
-], function($) {
+], function($, m) {
     $(document).ready(function() {
         /* App Module */
 

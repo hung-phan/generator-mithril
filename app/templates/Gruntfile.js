@@ -160,18 +160,7 @@ module.exports = function(grunt) {
                     useStrict: true
                 }
             }
-        },<% } else { %>
-
-        //browserify task
-        browserify: {
-          app: {
-            files: { '<%%= yeoman.app %>/scripts/main.js': ['<%%= yeoman.app %>/jsx/main.jsx'] },
-            options: {
-              alias: browserifyAliasConfig,
-              transform: [require('grunt-react').browserify]
-            }
-          }
-        },<% } %>
+        },
 
         //mithril template compilation task
         msx: {
@@ -184,7 +173,18 @@ module.exports = function(grunt) {
                 ext: '.js'
               }]
           }
-        },<% if (testFramework === 'jasmine') { %>
+        },<% } else { %>
+
+        //browserify task
+        browserify: {
+          app: {
+            files: { '<%%= yeoman.app %>/scripts/main.js': ['<%%= yeoman.app %>/jsx/main.jsx'] },
+            options: {
+              alias: browserifyAliasConfig,
+              transform: [require('grunt-msx').browserify]
+            }
+          }
+        },<% } %><% if (testFramework === 'jasmine') { %>
 
         // Jasmine testing framework configuration options
         jasmine: {
