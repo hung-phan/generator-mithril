@@ -1,12 +1,12 @@
 {
   "name": "generator-mithril",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "hung-phan/generator-mithril",
   "author": {
-    "name": "",
+    "name": "Phan Quang Hung",
     "email": "",
     "url": "https://github.com/hung-phan"
   },
