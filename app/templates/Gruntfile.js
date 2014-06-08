@@ -8,8 +8,8 @@ module.exports = function(grunt) {
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
 
-    // include browserify alias to config file
-    var browserifyAliasConfig = require('./browserify.config.js');
+    // include browserify alias to config file<% if (moduleLoader === 'browserify') { %>
+    var browserifyAliasConfig = require('./browserify.config.js');<% } %>
 
     // Define the configuration for all the tasks
     grunt.initConfig({
