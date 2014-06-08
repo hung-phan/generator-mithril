@@ -1,5 +1,41 @@
 {
-  "name": "package",
-  "version": "0.0.0",
-  "dependencies": {}
+  "name": "<%= _.slugify(appname) %>",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-clean": "*",<% if (moduleLoader === 'browserify') { %>
+    "grunt-browserify": "*",
+    "debowerify": "*",
+    "envify": "*",<% } else { %>
+    "grunt-bower-requirejs": "*",
+    "grunt-contrib-requirejs": "*",<% } %>
+    "grunt-contrib-htmlmin": "*",<% if (testFramework === 'jasmine') { %>
+    "grunt-contrib-jasmine": "*",<% } %>
+    "grunt-bower-install": "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-rev": "*",
+    "grunt-shell": "*",
+    "grunt-autoprefixer": "*",
+    "grunt-usemin": "*",<% if (includeModernizr) { %>
+    "grunt-modernizr": "*",<% } %>
+    "grunt-newer": "*",
+    "grunt-svgmin": "*",
+    "grunt-concurrent": "*",
+    "load-grunt-tasks": "*",
+    "time-grunt": "*",
+    "jshint-stylish": "*"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
 }
