@@ -37,6 +37,10 @@ Other dependencies
 
 5. Compass (gem install compass)
 
+## Know bug
+__Don't use browserify for now__, for the reason that Mithril is not compatible with it yet.
+If you eager to do it, change (this) to refer to the __window__ object.
+
 ## Browserify alias
 Alias for grunt browserify task are declared in __browserify.config.js__ with the format of __path:alias__.
 
