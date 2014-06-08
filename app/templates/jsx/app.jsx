@@ -28,28 +28,28 @@ app.controller = function() {
 //view
 app.view = function(ctrl) {
     return (
-        <div className="container">
-            <div className="header">
-                <ul className="nav nav-pills pull-right">
-                    <li className="active"><a href="#">Home</a>
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li class="active"><a href="#">Home</a>
                     </li>
                     <li><a href="#">About</a>
                     </li>
                     <li><a href="#">Contact</a>
                     </li>
                 </ul>
-                <h3 className="text-muted">Mithril<i className="fa fa-cog fa-spin"></i></h3>
+                <h3 class="text-muted">Mithril<i class="fa fa-cog fa-spin"></i></h3>
             </div>
 
-            <div className="jumbotron">
+            <div class="jumbotron">
                 <h1>'Allo, 'Allo!</h1>
-                <p className="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a className="btn btn-lg btn-success" href="#">Splendid!</a>
+                <p class="lead">Always a pleasure scaffolding your apps.</p>
+                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a>
                 </p>
             </div>
 
-            <div className="row marketing">
-                <div className="col-lg-6">
+            <div class="row marketing">
+                <div class="col-lg-6">
                     <h4>HTML5 Boilerplate</h4>
                     <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
 
@@ -59,7 +59,7 @@ app.view = function(ctrl) {
                     <h4>Modernizr</h4>
                     <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
                 </div>
-                <div className="col-lg-6">
+                <div class="col-lg-6">
                     <h4>Mithril</h4>
                     <p>Mithril is a client-side Javascript MVC framework, i.e. it's a tool to make application code divided into a data layer (called Model), a UI layer (called View), and a glue layer (called Controller)
                        Mithril is around 4kb gzipped thanks to its small, focused, API. It provides a templating engine with a virtual DOM diff implementation for performant rendering, utilities for high-level modelling via functional composition, as well as support for routing and componentization.
@@ -84,7 +84,7 @@ app.view = function(ctrl) {
                      </table>
                 </div>
             </div>
-            <div className="footer">
+            <div class="footer">
                 <p>♥ from the Yeoman team</p>
             </div>
         </div>
@@ -120,28 +120,28 @@ define(['mithril'], function(m) {
     //view
     app.view = function(ctrl) {
         return (
-            <div className="container">
-                <div className="header">
-                    <ul className="nav nav-pills pull-right">
-                        <li className="active"><a href="#">Home</a>
+            <div class="container">
+                <div class="header">
+                    <ul class="nav nav-pills pull-right">
+                        <li class="active"><a href="#">Home</a>
                         </li>
                         <li><a href="#">About</a>
                         </li>
                         <li><a href="#">Contact</a>
                         </li>
                     </ul>
-                    <h3 className="text-muted">Mithril<i className="fa fa-cog fa-spin"></i></h3>
+                    <h3 class="text-muted">Mithril<i class="fa fa-cog fa-spin"></i></h3>
                 </div>
 
-                <div className="jumbotron">
+                <div class="jumbotron">
                     <h1>'Allo, 'Allo!</h1>
-                    <p className="lead">Always a pleasure scaffolding your apps.</p>
-                    <p><a className="btn btn-lg btn-success" href="#">Splendid!</a>
+                    <p class="lead">Always a pleasure scaffolding your apps.</p>
+                    <p><a class="btn btn-lg btn-success" href="#">Splendid!</a>
                     </p>
                 </div>
 
-                <div className="row marketing">
-                    <div className="col-lg-6">
+                <div class="row marketing">
+                    <div class="col-lg-6">
                         <h4>HTML5 Boilerplate</h4>
                         <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
 
@@ -151,7 +151,7 @@ define(['mithril'], function(m) {
                         <h4>Modernizr</h4>
                         <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
                     </div>
-                    <div className="col-lg-6">
+                    <div class="col-lg-6">
                         <h4>Mithril</h4>
                         <p>Mithril is a client-side Javascript MVC framework, i.e. it's a tool to make application code divided into a data layer (called Model), a UI layer (called View), and a glue layer (called Controller)
                            Mithril is around 4kb gzipped thanks to its small, focused, API. It provides a templating engine with a virtual DOM diff implementation for performant rendering, utilities for high-level modelling via functional composition, as well as support for routing and componentization.
@@ -176,7 +176,7 @@ define(['mithril'], function(m) {
                          </table>
                     </div>
                 </div>
-                <div className="footer">
+                <div class="footer">
                     <p>♥ from the Yeoman team</p>
                 </div>
             </div>
