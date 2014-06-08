@@ -38,7 +38,7 @@ app.view = function(ctrl) {
                     <li><a href="#">Contact</a>
                     </li>
                 </ul>
-                <h3 className="text-muted">ReactJs <i className="fa fa-cog fa-spin"></i></h3>
+                <h3 className="text-muted">Mithril<i className="fa fa-cog fa-spin"></i></h3>
             </div>
 
             <div className="jumbotron">
@@ -130,7 +130,7 @@ define(['mithril'], function(m) {
                         <li><a href="#">Contact</a>
                         </li>
                     </ul>
-                    <h3 className="text-muted">ReactJs <i className="fa fa-cog fa-spin"></i></h3>
+                    <h3 className="text-muted">Mithril<i className="fa fa-cog fa-spin"></i></h3>
                 </div>
 
                 <div className="jumbotron">
