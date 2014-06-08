@@ -80,9 +80,9 @@ module.exports = function(grunt) {
                 tasks: ['browserify'],
                 options: { livereload: true }
             },<% } else { %>
-            react: {
+            msx: {
                 files: ['<%%= yeoman.app %>/jsx/{,*/}*.jsx'],
-                tasks: ['react'],
+                tasks: ['msx'],
                 options: { livereload: true }
             },<% } %>
             //scripts: {
@@ -173,8 +173,8 @@ module.exports = function(grunt) {
           }
         },<% } %>
 
-        //react compilation task
-        react: {
+        //mithril template compilation task
+        msx: {
           app: {
             files: [{
                 expand: true,
@@ -443,7 +443,7 @@ module.exports = function(grunt) {
             'clean:server',
             'concurrent:server',<% if (moduleLoader === 'browserify') { %>
             'browserify',<% } else { %>
-            'react',<% } %>
+            'msx',<% } %>
             'concat',
             'autoprefixer',
             'connect:livereload',
@@ -496,7 +496,7 @@ module.exports = function(grunt) {
         'autoprefixer',
         'cssmin',<% if (moduleLoader === 'browserify') { %>
         'browserify',<% } else { %>
-        'react',
+        'msx',
         'requirejs',
         'clean:afterBuild',<% } %>
         'copy:dist',<% if (moduleLoader === 'requirejs') { %>
