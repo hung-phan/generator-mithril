@@ -8,8 +8,12 @@ window._ = lodash;<% } %>
 require('bootstrap');
 var m = require('mithril');
 
-//require app module
-var app = require('./components/app.jsx');
+//routing configuration
+m.route(document.getElementById('ui-router'), '/', {
+    //require app module
+    '/': require('./components/app.jsx');
+});
+
 <% } else { %>
 require([
     'jquery',
