@@ -6,9 +6,9 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
     // Time how long tasks take. Can help when optimizing build times
-    require('time-grunt')(grunt);
+    require('time-grunt')(grunt);<% if (moduleLoader === 'browserify') { %>
 
-    // include browserify alias to config file<% if (moduleLoader === 'browserify') { %>
+    // include browserify alias to config file
     var browserifyAliasConfig = require('./browserify.config.js');<% } %>
 
     // Define the configuration for all the tasks
