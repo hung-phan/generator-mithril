@@ -11,7 +11,10 @@ describe('mithril generator', function () {
       }
 
       this.app = helpers.createGenerator('mithril:app', [
-        '../../app'
+        '../../app', [
+          helpers.createDummyGenerator(),
+          'mocha:app'
+        ]
       ]);
       done();
     }.bind(this));
@@ -25,7 +28,8 @@ describe('mithril generator', function () {
     ];
 
     helpers.mockPrompt(this.app, {
-      'someOption': true
+      cssFile: ['includeFontAwesome'],
+      jsFile: ['includeJasmine', 'includeModernizr']
     });
     this.app.options['skip-install'] = true;
     this.app.run({}, function () {
