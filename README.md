@@ -37,11 +37,11 @@ Other dependencies
 __Don't use browserify for now__, for the reason that Mithril is not compatible with it yet.
 If you eager to do it, change (this) to refer to the __window__ object.
 
-```
-(function(window) {
+```js
+Mithril = m = new function app(window) {
 ...
-//}(this));
-}(window));
+//}(this)
+}(window)
 ```
 
 ## Browserify alias

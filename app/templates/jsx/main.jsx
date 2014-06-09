@@ -13,7 +13,7 @@ var m = require('mithril');
 
 $(document).ready(function() {
     //setup routes to start w/ the `#` symbol
-    m.route.mode = "hash";
+    m.route.mode = 'hash';
     //routing configuration
     m.route(document.getElementById('ui-router'), '/', {
         '/': require('./components/app.jsx')
@@ -29,7 +29,7 @@ require([
 ], function($, m, app) {
     $(document).ready(function() {
         //setup routes to start w/ the `#` symbol
-        m.route.mode = "hash";
+        m.route.mode = 'hash';
         //routing configuration
         m.route(document.getElementById('ui-router'), '/', {
             '/': app
