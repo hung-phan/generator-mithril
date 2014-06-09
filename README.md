@@ -25,17 +25,13 @@ $ yo mithril
 
 Other dependencies
 
-1. [Phantom.js] (http://phantomjs.org/) - You can change this in the config/karma.config.js by changing browsers tag
+1. [Bower] (http://bower.io/)
 
-2. [Bower] (http://bower.io/)
+2. [Grunt] (http://gruntjs.com/)
 
-3. [Grunt] (http://gruntjs.com/)
+3. SASS (gem install sass)
 
-4. Napa (npm -g install napa)
-
-5. SASS (gem install sass)
-
-5. Compass (gem install compass)
+4. Compass (gem install compass)
 
 ## Known bug
 __Don't use browserify for now__, for the reason that Mithril is not compatible with it yet.
