@@ -56,13 +56,13 @@ The version of generator uses SASS Bootstrap as its main theme. If you want to u
 view their docs to know what to include [Compass](http://compass-style.org/reference/compass)
 
 To run the serve, and start building your application
-```
+```bash
 $ grunt serve
 ```
 It will automatically open the webpage on your localhost:9000, or you will have to do it manuallly
 
 To build files for production
-```
+```bash
 $ grunt build
 ```
 
