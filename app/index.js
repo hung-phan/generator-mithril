@@ -226,7 +226,7 @@ var MithrilGenerator = yeoman.generators.Base.extend({
   jsFile: function() {
     if (this.moduleLoader === 'requirejs') { this.template('jsx/config.jsx', 'app/jsx/config.jsx'); }
     this.template('jsx/main.jsx', 'app/jsx/main.jsx');
-    this.template('jsx/app.jsx', 'app/jsx/components/app.jsx');
+    this.template('jsx/app.jsx', 'app/jsx/app/app.jsx');
   },
 
   app: function() {
