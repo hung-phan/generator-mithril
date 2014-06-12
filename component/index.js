@@ -29,7 +29,8 @@ var ComponentGenerator = yeoman.generators.NamedBase.extend({
   },
   files: function() {
     var relativePath = 'app/jsx/' + this.name + '/';
-    this.template('component.js', relativePath + this.name + '.jsx');
+    this.template('component.jsx', relativePath + this.name + '.jsx');
+    this.template('_component.tpl.jsx', relativePath + '_' + this.name + '.tpl.jsx');
   }
 });
 
