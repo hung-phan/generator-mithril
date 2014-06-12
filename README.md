@@ -34,8 +34,7 @@ Other dependencies
 4. Compass (gem install compass)
 
 ## Known bug
-__Don't use browserify for now__, for the reason that Mithril is not compatible with it yet.
-If you eager to do it, change (this) to refer to the __window__ object.
+For __Browserify__, change the source code to the following.
 
 ```js
 Mithril = m = new function app(window) {
@@ -68,8 +67,9 @@ $ grunt build
 
 This also supports for subgenerator for components. Make sure you link them in your
 main module
-
-__working on__
+```bash
+$ yo mithril:component "name" # replace name with your module name
+```
 
 ## License
 
