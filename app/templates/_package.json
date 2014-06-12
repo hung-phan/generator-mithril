@@ -19,6 +19,7 @@
     "grunt-bower-requirejs": "*",
     "grunt-contrib-requirejs": "*",<% } %>
     "grunt-msx": "*",
+    "grunt-include-replace": "*",
     "grunt-contrib-htmlmin": "*",<% if (testFramework === 'jasmine') { %>
     "grunt-contrib-jasmine": "*",<% } %>
     "grunt-bower-install": "*",

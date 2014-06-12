@@ -16,14 +16,14 @@ $(document).ready(function() {
     m.route.mode = 'hash';
     //routing configuration
     m.route(document.getElementById('ui-router'), '/', {
-        '/': require('./components/app.jsx')
+        '/': require('./app/app.jsx')
     });
 });
 <% } else { %>
 require([
     'jquery',
     'mithril',
-    'components/app',<% if (includeLodash) { %>
+    'app/app',<% if (includeLodash) { %>
     'lodash',<% } %><% if (cssFramework === 'SASSBootstrap') { %>
     'bootstrap'<% } %>
 ], function($, m, app) {

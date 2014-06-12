@@ -77,12 +77,12 @@ module.exports = function(grunt) {
             },<% if (moduleLoader === 'browserify') { %>
             browserify: {
                 files: ['<%%= yeoman.app %>/jsx/{,*/}*.jsx'],
-                tasks: ['browserify'],
+                tasks: ['includereplace', 'browserify'],
                 options: { livereload: true }
             },<% } else { %>
             msx: {
                 files: ['<%%= yeoman.app %>/jsx/{,*/}*.jsx'],
-                tasks: ['msx'],
+                tasks: ['includereplace', 'msx'],
                 options: { livereload: true }
             },<% } %>
             //scripts: {
@@ -167,7 +167,7 @@ module.exports = function(grunt) {
           app: {
             files: [{
                 expand: true,
-                cwd: '<%%=  yeoman.app %>/jsx/',
+                cwd: '.tmp/jsx/',
                 src: ['**/*.jsx'],
                 dest: '<%%=  yeoman.app %>/scripts/',
                 ext: '.js'
@@ -178,13 +178,24 @@ module.exports = function(grunt) {
         //browserify task
         browserify: {
           app: {
-            files: { '<%%= yeoman.app %>/scripts/main.js': ['<%%= yeoman.app %>/jsx/main.jsx'] },
+            files: { '<%%= yeoman.app %>/scripts/main.js': ['.tmp/jsx/main.jsx'] },
             options: {
               alias: browserifyAliasConfig,
               transform: [require('grunt-msx').browserify]
             }
           }
-        },<% } %><% if (testFramework === 'jasmine') { %>
+        },<% } %>
+
+        includereplace: {
+          app: {
+            files: [{
+              expand: true,
+              cwd: '<%= yeoman.app %>/jsx',
+              src  : ['**/*.jsx', '!**/*.tpl.jsx'],
+              dest : '.tmp/jsx',
+            }]
+          },
+        },<% if (testFramework === 'jasmine') { %>
 
         // Jasmine testing framework configuration options
         jasmine: {
@@ -441,7 +452,8 @@ module.exports = function(grunt) {
 
         grunt.task.run([
             'clean:server',
-            'concurrent:server',<% if (moduleLoader === 'browserify') { %>
+            'concurrent:server',
+            'includereplace',<% if (moduleLoader === 'browserify') { %>
             'browserify',<% } else { %>
             'msx',<% } %>
             'concat',
@@ -494,7 +506,8 @@ module.exports = function(grunt) {
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
-        'cssmin',<% if (moduleLoader === 'browserify') { %>
+        'cssmin',
+        'includereplace',<% if (moduleLoader === 'browserify') { %>
         'browserify',<% } else { %>
         'msx',
         'requirejs',
