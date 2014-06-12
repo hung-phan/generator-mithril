@@ -190,7 +190,7 @@ module.exports = function(grunt) {
           app: {
             files: [{
               expand: true,
-              cwd: '<%= yeoman.app %>/jsx',
+              cwd: '<%%= yeoman.app %>/jsx',
               src  : ['**/*.jsx', '!**/*.tpl.jsx'],
               dest : '.tmp/jsx',
             }]
