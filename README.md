@@ -33,7 +33,7 @@ Other dependencies
 
 4. Compass (gem install compass)
 
-## Known bug
+## Known bug Mithril 0.1.15
 For __Browserify__, change the source code to the following.
 
 ```js
