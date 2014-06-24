@@ -9,7 +9,6 @@ requirejs.config({
     shim: {<% if (includeLodash) { %>
         'lodash': { exports: '_' },<% } %>
         'mithril': { exports: 'm' },
-        'director': { exports: 'Router' },
         'bootstrap': ['jquery']
     }
 });
