@@ -22,7 +22,6 @@
     "grunt-include-replace": "*",
     "grunt-contrib-htmlmin": "*",<% if (testFramework === 'jasmine') { %>
     "grunt-contrib-jasmine": "*",<% } %>
-    "grunt-bower-install": "*",
     "grunt-contrib-imagemin": "*",
     "grunt-contrib-watch": "*",
     "grunt-rev": "*",
