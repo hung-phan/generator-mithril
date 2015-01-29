@@ -3,7 +3,7 @@ requirejs.config({
     paths: {
         'mithril': '../bower_components/mithril/mithril',
         'jquery': '../bower_components/jquery/dist/jquery',<% if (includeLodash) { %>
-        'lodash': '../bower_components/lodash/dist/lodash',<% } %><% if (cssFramework === 'SASSBootstrap') { %>
+        'lodash': '../bower_components/lodash/lodash',<% } %><% if (cssFramework === 'SASSBootstrap') { %>
         'bootstrap': '../bower_components/sass-bootstrap/dist/js/bootstrap'<% } %>
     },
     shim: {<% if (includeLodash) { %>

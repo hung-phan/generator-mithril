@@ -7,7 +7,7 @@
     "lodash": "*",<% } %><% if (includeModernizr) { %>
     "modernizr": "*",<% } %>
     "mithril": "*",
-    "jquery": "~2.1.1",<% if (includeButtonCss) { %>
+    "jquery": "~2.1.3",<% if (includeButtonCss) { %>
     "Buttons": "*",<% } %><% if (includeAnimateCss) { %>
     "animate-sass": "*",<% } %><% if (moduleLoader === 'requirejs') { %>
     "requirejs": "*",<% } %>
